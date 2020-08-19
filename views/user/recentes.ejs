@@ -1,0 +1,44 @@
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/navbar.ejs") %>
+
+<body>
+  <div class="container mt-2 mb-2 justify-content">
+      <div class="card text-center"> 
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs mr-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/user/index">Mais vistos</a>
+            </li>
+            
+            <li class="nav-item"> 
+              <a class="nav-link active" href="/user/recente">Recentes</a>
+            </li>
+            
+            
+            <form class="form-inline my-2 my-lg-0" action="/user/pesquisa" method="POST" enctype="text/plain">
+              <input id="artigo" name="artigo" class="form-control mr-sm-2" type="search" placeholder="Pesquisar por postagem" aria-label="Pesquisar por categoria">
+              <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+            </form>
+          </ul>
+        </div>
+        <% post.forEach((dataValues)=> { %>
+          <div class="container row justify-content-center pl-5">
+            <div class="col-sm p-2">
+              <div class="card" style="width: 100%">
+                <div class="card-body">
+                  <h5 class="card-title"><%=dataValues.title%></h5>
+                  <p class="card-text"><%=dataValues.slug%></p>
+                  <a href="/user/artigo/<%=dataValues.id%>" class="btn btn-outline-secondary">Visitar</a>
+                </div>
+                <div class="card-footer">  <img src="/img/icone-visao.jpg" width="3%" height="3%" alt="" ><%=dataValues.vistos%> visualizações</div>
+              </div>
+            </div>
+          </div> 
+      <% }) %>                   
+        </div>
+        
+      </div>
+</div>
+</body>
+
+<%- include ("../partials/footer.ejs") %>

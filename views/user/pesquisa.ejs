@@ -1,0 +1,55 @@
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/navbar.ejs") %>
+
+<body>
+  <div class="container mt-2 mb-2 justify-content">
+      <div class="card text-center"> 
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs mr-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/user/index">Mais vistos</a>
+            </li>
+            
+            <li class="nav-item"> 
+              <a class="nav-link" href="/user/recente">Recentes</a>
+            </li>
+            
+            
+            <li class="nav-item nav-link active">
+                <form class="form-inline my-2 my-lg-0" action="/user/pesquisa" method="POST" enctype="text">
+                    <input name="artigo" id="artigo" class="form-control mr-sm-2" type="text" placeholder="Pesquisar por postagem" aria-label="Pesquisar por categoria">
+                    <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+                  </form>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container row justify-content-center pl-5">
+            <% if(post != null){%>
+              <div class="col-sm p-2">
+                <div class="card" style="width: 100%">
+                  <div class="card-body">
+                    <h5 class="card-title"><%=post.title%></h5>
+                    <p class="card-text"><%=post.slug%></p>
+                    <a href="/user/artigo/<%=post.id%>" class="btn btn-outline-secondary">Visitar</a>
+                  </div>
+                  <div class="card-footer">  <img src="/img/icone-visao.jpg" width="3%" height="3%" alt="" ><%=post.vistos%> visualizações</div>
+                </div>
+              </div>
+            <%}%>
+              <% if(post == null){%>
+                <div class="col-sm p-2 m-5">
+                    <div class="alert alert-dark" role="alert">
+                      Não encontramos uma publicação com este nome.
+                    </div>
+                  
+                </div>
+              <%}%>
+          </div> 
+        
+      </div>
+      
+</div>
+</body>
+
+<%- include ("../partials/footer.ejs") %>

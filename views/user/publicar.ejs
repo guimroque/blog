@@ -1,0 +1,48 @@
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/navbar.ejs") %>
+
+<body>
+    <div class="container mt-2 pb-5">
+        <h2 class="mt-2">Criando novo post</h2>
+        <hr>
+        <form action="/user/add" method="POST" enctype="text">
+            <div class="card">
+                
+                <div class="card-header">
+                    <h4>Nova publicação</h4>
+                </div>
+                <div class="card-body">
+                    <label for="titulo"class="text-info">Escolha um titulo</label>
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Titulo do post"><br>     
+
+                    <label for="slug"class="text-info">Slug</label>
+                    <input type="text" name="slug" id="slug" placeholder="Faça aqui um breve resumo sobre a postagem" class="form-control"><br>
+                    
+                    <label for="article"class="text-info">Escreva aqui sua postagem</label>
+                    <textarea class="form-control pb-5" name="body" id="post"></textarea><br>
+
+                    
+                    <label for="slug"class="text-info">Seu email</label>
+                    <input type="text" name="email" id="email" placeholder="Seu email para contato" class="form-control"><br>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary btn-block" type="submit">Criar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<%- include ("../partials/footer.ejs") %>
+<script src="/tinymce/tinymce.min.js"></script>
+
+<script>
+
+    tinymce.init({
+        selector: "#post",
+        plugins :[
+            'advlist autolink link image lists print preview hr searchreplace wordcount fullscreen insertdatetime media save table paste emoticons'
+        ]
+    })
+
+</script>

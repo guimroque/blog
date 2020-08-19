@@ -1,0 +1,52 @@
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/homenavbar.ejs") %>
+
+<body>
+    <div class="container justify-content-center w-100 pb-5">
+        <div class="row p-3">
+            <div class="col-10">
+                <div class="card">
+                    <div>
+                        <div class="card-header text-center">
+                            <h1><%=artigo.title%></h1>
+                    </div>
+                    <div class="card-body">
+                    
+                        <h2><%-artigo.post%></h2><br>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-sm">
+                            </div>
+                            <div class="col-sm">
+                            </div>
+                            <div class="col-sm">
+                            </div>
+                              <div class="col-sm"></div>
+                              <div class="col-sm">
+                                <div class="fb-share-button" data-href="https://www.youtube.com/watch?v=Yilxz3fmTLU&list=RDMMd3ygM_sIeoI&index=4" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-info text-left"><h8>Data de publicação: <%=artigo.createdAt%></h8><br>
+                <h8>Autor: <%=artigo.autor%></h8><br>
+                <h8>Contato: <%=artigo.email%></h8></div>
+            </div>
+            <div class="col">
+                <div class="card"> Anuncio aquis</div>
+            </div>
+        </div>
+        <div class="card">
+            anuncio aqui
+        </div>
+    </div>
+
+
+</body>
+
+<%- include ("../partials/footer.ejs") %>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0&appId=759433408219287&autoLogAppEvents=1" nonce="OIXAro0d"></script>

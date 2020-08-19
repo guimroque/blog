@@ -1,0 +1,31 @@
+   <div id="container-footer">
+    
+        <div class="sub-container-footer">
+            <img src="/img/Logo_02.png" alt="">
+        </div>
+        <div class="sub-container-footer1">
+            <!-- <div class="intruct-esquerda">
+                <span>Como funciona?</span>
+            </div>
+            <div class="instruct-esquerda">
+                <span>1º Após o cadastro o usuário escreve a notícia que quiser.</span>
+                <img class="esquerda" src="/img/icone-one.png" alt="acessar notebook de casa">
+            </div>
+            <div class="instruct-esquerda">
+                <span>2º Divulga em suas redes sociais.</span>
+                <img class="esquerda" src="/img/icone-two.png" alt="divulgando pelas redes sociais">
+            </div>
+            <div class="instruct">
+                <span>3º Acompanha até o fechamento.</span>
+                <img class="esquerda" src="/img/icone-three.png" alt="aguardando fechamento">
+            </div>
+            <div class="instruct">
+                <span>4º Caso sua notícia seja uma das mais vistas o prêmio é seu.</span>
+                <img class="direita" src="/img/icone-four.png" alt="Receber premio">
+            </div>
+            <div class="instruct">
+                <span>5º Aí é só desfrutar.</span>
+                <img class="direita" src="/img/icone-five.png" alt="desfrutar premio">
+            </div> -->
+        </div>
+    </div>

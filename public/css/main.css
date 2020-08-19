@@ -1,0 +1,9 @@
+:root {
+    --color-background: #F0F0F7;
+
+}
+@media print {
+    .container {
+      width: auto;
+    }
+  }
