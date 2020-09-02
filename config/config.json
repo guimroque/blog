@@ -1,25 +1,25 @@
 {
   "development": {
-    "username": "noticiapremiada",
-    "password": "miguel2001",
-    "database": "noticia_premiada",
-    "host": "mysql669.umbler.com",
+    "username": "*******",
+    "password": "******",
+    "database": "******",
+    "host": "*************",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
-    "username": "noticiapremiada",
-    "password": "miguel2001",
-    "database": "noticia_premiada",
-    "host": "mysql669.umbler.com",
+    "username": "*******",
+    "password": "******",
+    "database": "******",
+    "host": "*************",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "noticiapremiada",
-    "password": "miguel2001",
-    "database": "noticia_premiada",
-    "host": "mysql669.umbler.com",
+    "username": "*******",
+    "password": "******",
+    "database": "******",
+    "host": "*************",
     "dialect": "mysql",
     "operatorsAliases": false
   }
